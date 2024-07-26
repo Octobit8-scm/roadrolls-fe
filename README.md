@@ -15,7 +15,7 @@ Road Rolls project is a CI/CD Pipeline implementation for React and NodeJs appli
 
 
 # Infrastructure setup
-
+The Workspaces have been created and this is the URL for accessing the same - https://app.terraform.io/app/Octobit8-Private-Limited/workspaces
 
 
 
