@@ -28,12 +28,12 @@ Road Rolls project is a CI/CD Pipeline implementation for React and NodeJs appli
 
 
 # GitHub Settings
-1 Add branch protection rule for all branches.   
-2 Code and security analysis - Enable Depandabot Alerts.
-3 Add GPG key for signing in. 
-4 Add collaborators - Provide Role based access.
-5 Add webhook for triggering events.
-6 Add Email notifications.
+1. Add branch protection rule for all branches.   
+2. Code and security analysis - Enable Depandabot Alerts.
+3. Add GPG key for signing in. 
+4. Add collaborators - Provide Role based access.
+5. Add webhook for triggering events.
+6. Add Email notifications.
 # Docker
 
 
