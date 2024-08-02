@@ -59,12 +59,10 @@ docker pull localhost:5000/your-repo-name:tag
 
 
 # Code Coverage and analysis
-
-
-
-
-
-
+1. Configure analysis method.clear.
+2. Provide a project token to be set as an environment variable.
+3. Navigate to your job in Jenkins.
+4. Verify Analysis Results in SonarCloud.
 # Artifact Managment
 
 
