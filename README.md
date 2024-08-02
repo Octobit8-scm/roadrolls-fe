@@ -1,4 +1,4 @@
-Road Rolls project is a CI/CD Pipeline implementation for React and NodeJs application. The objective is to automate the build, test, and deployment process, ensure code quality and security, manage infrastructure as code(IaC), and monitor the application's performance and health. Tools used for production are GitHub, AWS, Docker, Terraform, SonarQube, Jenkins, Jfrog Artifactory and target release date is 15 October 2024.
+Road Rolls project is a CI/CD Pipeline implementation for MERN application. The objective is to automate the build, test, and deployment process, ensure code quality and security, manage infrastructure as code(IaC), and monitor the application's performance and health. Tools used for production are GitHub, AWS, Docker, Terraform, SonarQube, Jenkins, Jfrog Artifactory and target release date is 15 October 2024.
 # Instructions to run roadrolls-fe
 1. clone this repo to your loacl machine
 2. install npm in your machine
@@ -14,7 +14,7 @@ Road Rolls project is a CI/CD Pipeline implementation for React and NodeJs appli
 4. The npm-check-updates module will update the package.json file to the latest versions for all dependencies
 
 
-# Infrastructure setup
+# Infrastructure as code
 
 
 
@@ -34,7 +34,20 @@ Road Rolls project is a CI/CD Pipeline implementation for React and NodeJs appli
 4. Add collaborators - Provide Role based access.
 5. Add webhook for triggering events.
 6. Add Email notifications.
-# Docker
+# Containerization
+1. Ensure Docker is installed and running on your machine. You can verify the installation by running:
+docker --version
+2. Repository is created on the dockerhub :- 
+https://hub.docker.com/r/octoimages/road-rolls
+3. docker tag your-image:tag your-dockerhub-username/your-repo-name:tag docker push your-dockerhub-username/your-repo-name:tag
+4. Setting up a local Docker registry allows you to host your own Docker images locally.
+5. Run a Local Registry Container:
+docker run -d -p 5000:5000 --name local-registry registry:2
+6. Tag and Push an Image to the Local Registry:
+docker tag your-image:tag localhost:5000/your-repo-name:tag
+docker push localhost:5000/your-repo-name:tag
+7. Pull an Image from the Local Registry:
+docker pull localhost:5000/your-repo-name:tag
 
 
 
